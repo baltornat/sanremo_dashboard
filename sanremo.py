@@ -1,6 +1,6 @@
 import dash
-import dash_table
-import dash_html_components as html
+from dash import dash_table
+from dash import html
 from dash import dcc
 import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output
@@ -12,12 +12,12 @@ fanta = pd.read_csv('./csv/fantasanremo.csv', sep=',')
 # Operazioni preliminari per sistemare il dataframe
 fanta.fillna(0, inplace=True)
 
-punti = ['Serata1', 'Serata2', 'Serata3', 'Serata4', 'Finale', 'TotalePunti']
+punti = ['Punti Serata 1', 'Punti Serata 2', 'Punti Serata 3', 'Punti Serata 4', 'Punti Finale', 'Totale Punti']
 
 dropdown = dcc.Dropdown(
     id='punti-dropdown',
     options=[{'label': i, 'value': i} for i in punti],
-    value='TotalePunti'
+    value='Totale Punti'
 )
 
 table = dash_table.DataTable(
@@ -32,7 +32,7 @@ table = dash_table.DataTable(
 
 table_csv = dash_table.DataTable(
     id='table_csv',
-    columns=[{"name": i, "id": i} for i in fanta.columns],
+    columns=fanta[['Cantante', 'Squadra', 'Punti Serata 1', 'Punti Serata 2', 'Punti Serata 3', 'Punti Serata 4', 'Punti Finale', 'Totale Punti']],
     data=fanta.to_dict("records"),
     style_cell={'textAlign': 'center'},
     style_header={
@@ -48,7 +48,7 @@ app = dash.Dash(
     suppress_callback_exceptions=True
 )
 
-server = app.server
+#server = app.server
 
 app.layout = html.Div(children=[
     html.H1(children='Statistiche Fanta Sanremo'),
