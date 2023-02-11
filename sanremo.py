@@ -13,6 +13,10 @@ fanta = pd.read_csv('./csv/fantasanremo.csv', sep=',')
 fanta.fillna(0, inplace=True)
 
 punti = ['Punti Serata 1', 'Punti Serata 2', 'Punti Serata 3', 'Punti Serata 4', 'Punti Finale', 'Totale Punti']
+selezionate = ['Cantante', 'Squadra', 'Punti Serata 1', 'Punti Serata 2', 'Punti Serata 3', 'Punti Serata 4', 'Punti Finale', 'Somma Punti Classifica', 'Totale Punti']
+fanta = fanta.assign(Somma = fanta['Punti Classifica Serata 2'] + fanta['Punti Classifica Serata 3'] + fanta['Punti Classifica Serata 4'] + fanta['Punti Classifica Finale'])
+fanta.rename(columns={'Somma':'Somma Punti Classifica'}, inplace=True)
+sorted_fanta = fanta.sort_values(by='Totale Punti', ascending=False)
 
 dropdown = dcc.Dropdown(
     id='punti-dropdown',
@@ -32,8 +36,8 @@ table = dash_table.DataTable(
 
 table_csv = dash_table.DataTable(
     id='table_csv',
-    columns=fanta[['Cantante', 'Squadra', 'Punti Serata 1', 'Punti Serata 2', 'Punti Serata 3', 'Punti Serata 4', 'Punti Finale', 'Totale Punti']],
-    data=fanta.to_dict("records"),
+    columns=[{"name": i, "id": i} for i in selezionate],
+    data=sorted_fanta.to_dict("records"),
     style_cell={'textAlign': 'center'},
     style_header={
         'backgroundColor': '#636EFA',
@@ -48,7 +52,7 @@ app = dash.Dash(
     suppress_callback_exceptions=True
 )
 
-#server = app.server
+server = app.server
 
 app.layout = html.Div(children=[
     html.H1(children='Statistiche Fanta Sanremo'),
