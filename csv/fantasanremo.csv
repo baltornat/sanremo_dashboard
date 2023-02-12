@@ -1,29 +1,29 @@
 Cantante,Età,Quotazione,Squadra,Punti Serata 1,Punti Serata 2,Punti Serata 3,Punti Serata 4,Punti Finale,Punti Classifica Serata 2,Punti Classifica Serata 3,Punti Classifica Serata 4,Punti Classifica Finale,Totale Punti
-Anna Oxa,61,18,Simone,35,0,30,20,,-9,-8,-8,,60
-Ariete,20,21,Anna,25,35,65,55,,-3,1,-1,,177
-Articolo 31,53,21,Sara,0,30,30,85,,-1,0,3,,147
-Colapesce Dimartino,37.5,20,Stefano,0,30,30,65,,35,12,8,,180
-Colla Zio,23.2,16,Mamma,45,20,95,35,,4,-3,-3,,193
-Coma_Cose,37,20,Stefano,45,16,25,65,,16,6,5,,178
-Elodie,32,24,Anna,25,0,15,115,,18,10,10,,193
-Gianluca Grignani,50,20,Sara,55,0,85,81,,-2,5,6,,230
-gIANMARIA,20,17,Marco,35,20,126,95,,-5,-6,-4,,261
-Giorgia,51,25,Simone,0,25,45,50,,12,8,18,,158
-I Cugini di Campagna,61,21,Andrea,40,2,162,137,,2,-5,-5,,333
-Lazza,28,22,Marco,0,45,70,40,,14,20,25,,214
-LDA,19,21,Anna,0,125,65,77,,-7,2,2,,264
-Leo Gassmann,24,18,Sara,40,0,25,30,,6,-2,1,,100
-Levante,35,20,Anna,0,50,75,71,,1,-4,-6,,187
-Madame,21,22,Andrea,0,35,30,30,,25,16,14,,150
-Mara Sattei,27,21,Andrea,45,0,35,85,,5,-1,-2,,167
-Marco Mengoni,34,26,Marco,45,0,55,85,,50,50,50,,335
-Modà,43.4,18,Sara,0,60,35,35,,-4,4,4,,134
-Mr. Rain,31,19,Simone,65,0,25,15,,0,25,20,,150
-OLLY,21,16,Mamma,35,20,125,80,,-6,-7,-7,,240
-Paola & Chiara,48.5,22,Marco,0,100,100,50,,3,3,0,,256
-Rosa Chemical,25,19,Stefano,0,55,95,50,,10,14,12,,236
-Sethu,25,16,Simone,0,90,95,105,,25,25,25,,365
-Shari,20,17,Mamma,0,35,40,75,,-10,-10,-10,,120
-Tananai,27,22,Andrea,0,35,35,90,,20,18,16,,214
-Ultimo,27,27,Stefano,35,0,25,90,,8,35,35,,228
-Will,23,16,Mamma,0,65,145,75,,-8,-9,-9,,259
+Anna Oxa,61,18,Simone,35,0,30,20,20,-9,-8,-8,-16,64
+Ariete,20,21,Anna,25,35,65,65,85,-3,1,-1,6,278
+Articolo 31,53,21,Sara,0,30,30,85,40,-1,0,3,2,189
+Colapesce Dimartino,37.5,20,Stefano,0,30,30,65,200,35,12,8,16,396
+Colla Zio,23.2,16,Mamma,45,20,95,35,15,4,-3,-3,-6,202
+Coma_Cose,37,20,Stefano,45,16,25,75,155,16,6,5,8,351
+Elodie,32,24,Anna,25,0,15,125,45,18,10,10,20,268
+Gianluca Grignani,50,20,Sara,55,0,85,86,135,-2,5,6,10,380
+gIANMARIA,20,17,Marco,35,20,126,90,35,-5,-6,-4,-10,281
+Giorgia,51,25,Simone,0,25,45,50,15,12,8,18,32,205
+I Cugini di Campagna,61,21,Andrea,40,2,162,147,120,2,-5,-5,-8,455
+Lazza,28,22,Marco,0,45,70,40,75,14,20,25,70,359
+LDA,19,21,Anna,0,125,65,82,40,-7,2,2,4,313
+Leo Gassmann,24,18,Sara,40,0,25,30,30,6,-2,1,-2,128
+Levante,35,20,Anna,0,50,75,71,90,1,-4,-6,-12,265
+Madame,21,22,Andrea,0,35,30,30,45,25,16,14,28,223
+Mara Sattei,27,21,Andrea,45,0,35,85,15,5,-1,-2,-4,178
+Marco Mengoni,34,26,Marco,45,0,55,90,230,50,50,50,100,670
+Modà,43.4,18,Sara,0,60,35,20,45,-4,4,4,12,176
+Mr. Rain,31,19,Simone,65,0,25,25,120,0,25,20,50,330
+OLLY,21,16,Mamma,35,20,125,97,20,-6,-7,-7,-14,263
+Paola & Chiara,48.5,22,Marco,0,100,100,50,40,3,3,0,0,296
+Rosa Chemical,25,19,Stefano,0,65,105,70,160,10,14,12,24,460
+Sethu,25,16,Simone,0,90,95,100,90,25,25,25,50,500
+Shari,20,17,Mamma,0,35,40,75,65,-10,-10,-10,-20,165
+Tananai,27,22,Andrea,0,35,35,90,75,20,18,16,36,325
+Ultimo,27,27,Stefano,35,0,25,90,60,8,35,35,40,328
+Will,23,16,Mamma,0,65,145,75,35,-8,-9,-9,-18,276
