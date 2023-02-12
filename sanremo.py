@@ -18,6 +18,8 @@ selezionate = ['Cantante', 'Squadra', 'Punti Serata 1', 'Punti Serata 2', 'Punti
 
 # Raddoppia i punti dei capitani nell'ultima serata
 fanta.loc[fanta['Cantante'].isin(capitani), 'Totale Punti'] += fanta['Punti Finale'] + fanta['Punti Classifica Finale']
+fanta.loc[fanta['Cantante'].isin(capitani), 'Punti Finale'] *= 2
+fanta.loc[fanta['Cantante'].isin(capitani), 'Punti Classifica Finale'] *= 2
 
 fanta = fanta.assign(Somma = fanta['Punti Classifica Serata 2'] + fanta['Punti Classifica Serata 3'] + fanta['Punti Classifica Serata 4'] + fanta['Punti Classifica Finale'])
 fanta.rename(columns={'Somma':'Somma Punti Classifica'}, inplace=True)
