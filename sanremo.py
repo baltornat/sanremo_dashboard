@@ -12,8 +12,13 @@ fanta = pd.read_csv('./csv/fantasanremo.csv', sep=',')
 # Operazioni preliminari per sistemare il dataframe
 fanta.fillna(0, inplace=True)
 
+capitani = ['Tananai', 'Elodie', 'Ultimo', 'Giorgia', 'Modà', 'Colla Zio', 'Marco Mengoni']
 punti = ['Punti Serata 1', 'Punti Serata 2', 'Punti Serata 3', 'Punti Serata 4', 'Punti Finale', 'Totale Punti']
 selezionate = ['Cantante', 'Squadra', 'Punti Serata 1', 'Punti Serata 2', 'Punti Serata 3', 'Punti Serata 4', 'Punti Finale', 'Somma Punti Classifica', 'Totale Punti']
+
+# Raddoppia i punti dei capitani nell'ultima serata
+fanta.loc[fanta['Cantante'].isin(capitani), 'Totale Punti'] += fanta['Punti Finale'] + fanta['Punti Classifica Finale']
+
 fanta = fanta.assign(Somma = fanta['Punti Classifica Serata 2'] + fanta['Punti Classifica Serata 3'] + fanta['Punti Classifica Serata 4'] + fanta['Punti Classifica Finale'])
 fanta.rename(columns={'Somma':'Somma Punti Classifica'}, inplace=True)
 sorted_fanta = fanta.sort_values(by='Totale Punti', ascending=False)
